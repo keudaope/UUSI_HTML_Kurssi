@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tekniikan maailma - tilaus</title>
+  </head>
+  <body>
+    <h1>Tekniikan maailman tilauslomake</h1>
+    <form action="">
+      <label for="nimi">Etu- ja Sukunimi: </label>
+      <input type="text" id="nimi" placeholder="Aku Ankka" required /><br />
+      <label for="sahkoposti">Sähköposti</label>
+      <input type="text" id="sahkoposti" placeholder="aku.ankka" required />@
+      <select name="paate" id="paate">
+        <option value="gmail">gmail.com</option>
+        <option value="hotmail">hotmail.com</option>
+        <option value="outlook">outlook.com</option>
+        <option value="suomi">suomi.fi</option>
+        <option value="keuda">edu.keuda.fi</option></select
+      ><br />
+      <label for="salasana">Salasana: </label>
+      <input type="password" id="salasana" required /><br />
+      <h3>Sukupuoli:</h3>
+      <label for="mies">Mies:</label>
+      <input type="radio" name="sukupuoli" id="mies" />
+      <label for="nainen">Nainen:</label>
+      <input type="radio" name="sukupuoli" id="nainen" />
+      <label for="muu">Muu:</label>
+      <input type="radio" name="sukupuoli" id="Muu" /><br />
+      <label for="synttari">Syntymäpäivä: </label>
+      <input type="date" id="synttari" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>

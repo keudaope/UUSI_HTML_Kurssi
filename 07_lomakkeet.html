@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lomakkeet</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="username">Käyttäjänimi:</label>
+      <input
+        type="text"
+        id="username"
+        placeholder="Kirjoita tähän käyttäjänimesi"
+        required
+      />
+      <label for="email">Sähköposti:</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="pikku.kalle@vitsit.com"
+        required
+      />
+      <label for="password">Salasana:</label>
+      <input type="password" id="password" />
+      <label for="isa">Isä:</label>
+      <input type="radio" id="isa" name="parent" />
+      <label for="aiti">Äiti:</label>
+      <input type="radio" id="aiti" name="parent" />
+      <label for="checkbox">Tulen juhlaan:</label>
+      <input type="checkbox" id="checkbox" />
+      <label for="vierailijat">Montako vierasta:</label>
+      <select name="vierailijat" id="vierailijat">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <label for="date">Date:</label>
+      <input type="date" id="date" />
+      <textarea name="" id=""></textarea>
+      <input type="submit" />
+    </form>
+  </body>
+</html>

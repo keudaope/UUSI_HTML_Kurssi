@@ -1,0 +1,18 @@
+h1 {
+  background-color: rgb(255, 80, 80);
+  /* border-color: blue;
+  border-width: 5px;
+  border-style: solid; */
+  /* border: 5px blue solid; */
+  border: 2px dashed orange;
+  color: yellow;
+}
+body {
+  /* background-color: green; */
+  background-image: url(kuvat/underwater.jpg);
+  background-size: cover;
+}
+
+li {
+  color: #fff;
+}
