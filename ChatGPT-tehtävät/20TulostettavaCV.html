@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Print CV</title>
+    <style>
+      :root {
+        --w: 940px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: #f0f2f7;
+        font: 15px/1.6 system-ui;
+        color: #111;
+        display: flex;
+        justify-content: center;
+      }
+      .page {
+        width: var(--w);
+        background: #fff;
+        margin: 2rem;
+        padding: 2rem;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        border-bottom: 2px solid #eee;
+        margin-bottom: 1rem;
+      }
+      h1 {
+        margin: 0;
+      }
+      .two {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.2rem;
+      }
+      section {
+        margin: 0.6rem 0;
+      }
+      @media print {
+        @page {
+          size: A4;
+          margin: 12mm;
+        }
+        body {
+          background: #fff;
+        }
+        .page {
+          width: auto;
+          margin: 0;
+          border: none;
+          border-radius: 0;
+        }
+        .two {
+          grid-template-columns: 2fr 1fr;
+        }
+        a {
+          color: #000;
+          text-decoration: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <h1>Alex Example</h1>
+        <p>alex@example.com · 040 123 4567</p>
+      </header>
+      <div class="two">
+        <section>
+          <h2>Työkokemus</h2>
+          <p>Rooli – Yritys – 2023–…</p>
+          <p>Vastuut ja saavutukset…</p>
+        </section>
+        <aside>
+          <h2>Taidot</h2>
+          <ul>
+            <li>HTML/CSS</li>
+            <li>Git</li>
+            <li>UX-perusteet</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

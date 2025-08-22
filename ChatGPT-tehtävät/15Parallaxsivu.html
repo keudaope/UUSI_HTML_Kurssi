@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Parallax</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        font: 16px system-ui;
+      }
+      .hero {
+        min-height: 70vh;
+        display: grid;
+        place-items: center;
+        color: #fff;
+        background: #000 url(https://picsum.photos/seed/px/1600/1000)
+          center/cover fixed;
+      }
+      .section {
+        padding: 3rem 1rem;
+        max-width: 900px;
+        margin: auto;
+        line-height: 1.8;
+      }
+      .alt {
+        background: #0f1422;
+        color: #e6e6e6;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero"><h1>Parallax Hero</h1></header>
+    <div class="section">
+      <p>
+        Scrollaa alas – taustakuva pysyy paikallaan (background-attachment:
+        fixed).
+      </p>
+    </div>
+    <div
+      class="hero"
+      style="background-image: url(https://picsum.photos/seed/px2/1600/1000)"
+    >
+      <h2>Toinen kerros</h2>
+    </div>
+    <div class="section alt"><p>Loppusisältö…</p></div>
+  </body>
+</html>

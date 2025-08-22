@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sticky TOC</title>
+    <style>
+      body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        min-height: 100vh;
+        background: #0e1220;
+        color: #e9eef9;
+        font: 16px/1.7 system-ui;
+      }
+      aside {
+        position: sticky;
+        top: 0;
+        align-self: start;
+        height: 100vh;
+        overflow: auto;
+        background: #111731;
+        border-right: 1px solid #223055;
+        padding: 1rem;
+      }
+      main {
+        padding: 2rem;
+      }
+      a {
+        color: #9ec5ff;
+        text-decoration: none;
+      }
+      h2 {
+        scroll-margin-top: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <aside>
+      <h3>Sisällysluettelo</h3>
+      <ol>
+        <li><a href="#a">Johdanto</a></li>
+        <li><a href="#b">Tekniikat</a></li>
+        <li><a href="#c">Yhteenveto</a></li>
+      </ol>
+    </aside>
+    <main>
+      <h1>Dokumentti</h1>
+      <h2 id="a">Johdanto</h2>
+      <p>…pitkä teksti…</p>
+      <h2 id="b">Tekniikat</h2>
+      <p>Sticky TOC, scroll-margin, ankkurit.</p>
+      <h2 id="c">Yhteenveto</h2>
+      <p>…</p>
+    </main>
+  </body>
+</html>

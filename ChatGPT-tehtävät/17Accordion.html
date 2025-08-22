@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Accordion</title>
+    <style>
+      body {
+        margin: 0;
+        background: #0f1422;
+        color: #e6e6e6;
+        font: 16px system-ui;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        width: min(800px, 90vw);
+      }
+      details {
+        background: #121a2c;
+        border: 1px solid #22314f;
+        border-radius: 12px;
+        margin: 0.6rem 0;
+        overflow: hidden;
+      }
+      summary {
+        cursor: pointer;
+        padding: 1rem 1.2rem;
+        font-weight: 600;
+      }
+      details[open] summary {
+        background: #0f182b;
+      }
+      .content {
+        padding: 0 1.2rem 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CSS-Accordion ilman JS:ää</h1>
+      <details open>
+        <summary>Kysymys 1</summary>
+        <div class="content">Vastaus…</div>
+      </details>
+      <details>
+        <summary>Kysymys 2</summary>
+        <div class="content">Vastaus…</div>
+      </details>
+      <details>
+        <summary>Kysymys 3</summary>
+        <div class="content">Vastaus…</div>
+      </details>
+    </div>
+  </body>
+</html>

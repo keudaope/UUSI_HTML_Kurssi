@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CSS Modal</title>
+    <style>
+      body {
+        margin: 0;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        background: #0e1322;
+        color: #e6e6e6;
+        font: 16px system-ui;
+      }
+      a.btn {
+        padding: 0.7rem 1rem;
+        border-radius: 10px;
+        background: #3b82f6;
+        color: #fff;
+        text-decoration: none;
+      }
+      #modal {
+        position: fixed;
+        inset: 0;
+        background: #0008;
+        display: none;
+        align-items: center;
+        justify-content: center;
+      }
+      #modal:target {
+        display: flex;
+      }
+      .dialog {
+        background: #111a30;
+        border: 1px solid #22314f;
+        border-radius: 12px;
+        padding: 1rem 1.2rem;
+        max-width: 520px;
+      }
+      .close {
+        float: right;
+        text-decoration: none;
+        background: #fff1;
+        color: #fff;
+        border: 1px solid #4b5d85;
+        padding: 0.2rem 0.5rem;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <a class="btn" href="#modal">Avaa modal</a>
+    <section id="modal">
+      <div class="dialog">
+        <a class="close" href="#">✕</a>
+        <h2>CSS Modal</h2>
+        <p>Tämä aukeaa `:target`-valitsimella (ankkuri URLissa).</p>
+      </div>
+    </section>
+  </body>
+</html>

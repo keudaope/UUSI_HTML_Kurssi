@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Magazine Grid</title>
+    <style>
+      :root {
+        --gap: 14px;
+      }
+      body {
+        margin: 0;
+        background: #111;
+        color: #e6e6e6;
+        font: 16px/1.6 system-ui;
+      }
+      .wrapper {
+        max-width: 1100px;
+        margin: auto;
+        padding: 1rem;
+      }
+      .grid {
+        display: grid;
+        gap: var(--gap);
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+          "hero  aside"
+          "main  aside";
+      }
+      .hero {
+        grid-area: hero;
+        background: #1a1f2e;
+        padding: 1rem;
+        border-radius: 12px;
+      }
+      .hero img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      aside {
+        grid-area: aside;
+        background: #161a25;
+        padding: 1rem;
+        border-radius: 12px;
+      }
+      main {
+        grid-area: main;
+        display: grid;
+        gap: var(--gap);
+        grid-template-columns: repeat(3, 1fr);
+      }
+      article {
+        background: #141820;
+        border: 1px solid #263047;
+        border-radius: 10px;
+        padding: 0.8rem;
+      }
+      @media (max-width: 900px) {
+        .grid {
+          grid-template-columns: 1fr;
+          grid-template-areas: "hero" "aside" "main";
+          main {
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+      }
+      @media (max-width: 560px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper grid">
+      <section class="hero">
+        <h1>Uutisportaalin etusivu</h1>
+        <img src="https://picsum.photos/1200/420" alt="" />
+        <p>Hero-artikkeli ja ingressi.</p>
+      </section>
+      <aside>
+        <h2>Ajankohtaista</h2>
+        <ul>
+          <li>Lyhyet 1</li>
+          <li>Lyhyet 2</li>
+          <li>Lyhyet 3</li>
+        </ul>
+      </aside>
+      <main>
+        <article>
+          <h3>Juttu A</h3>
+          <p>Lyhyt kuvaus…</p>
+        </article>
+        <article>
+          <h3>Juttu B</h3>
+          <p>Lyhyt kuvaus…</p>
+        </article>
+        <article>
+          <h3>Juttu C</h3>
+          <p>Lyhyt kuvaus…</p>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>

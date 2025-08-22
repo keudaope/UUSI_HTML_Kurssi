@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Teema</title>
+    <style>
+      :root {
+        --bg: #f6f7fb;
+        --text: #111;
+        --card: #fff;
+        --accent: #4a90e2;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f1422;
+          --text: #e8eef6;
+          --card: #131a2a;
+          --accent: #8ec5ff;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px system-ui;
+      }
+      .wrap {
+        max-width: 1100px;
+        margin: auto;
+        padding: 2rem;
+      }
+      .grid {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 14px;
+        padding: 1rem;
+      }
+      h1 {
+        color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Teemoitettava portfolio</h1>
+      <section class="grid">
+        <article class="card">
+          <h3>Projekti A</h3>
+          <p>Kuvaus…</p>
+        </article>
+        <article class="card">
+          <h3>Projekti B</h3>
+          <p>Kuvaus…</p>
+        </article>
+        <article class="card">
+          <h3>Projekti C</h3>
+          <p>Kuvaus…</p>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Masonry Gallery</title>
+    <style>
+      body {
+        margin: 0;
+        background: #101010;
+        color: #eee;
+        font-family: system-ui;
+      }
+      .wrapper {
+        max-width: 1100px;
+        margin: auto;
+        padding: 1rem;
+      }
+      .masonry {
+        column-count: 4;
+        column-gap: 14px;
+      }
+      .card {
+        break-inside: avoid;
+        background: #1a1a1a;
+        margin: 0 0 14px;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid #2a2a2a;
+      }
+      .card img {
+        width: 100%;
+        display: block;
+      }
+      .card p {
+        padding: 0.7rem 1rem;
+      }
+      @media (max-width: 1000px) {
+        .masonry {
+          column-count: 3;
+        }
+      }
+      @media (max-width: 700px) {
+        .masonry {
+          column-count: 2;
+        }
+      }
+      @media (max-width: 480px) {
+        .masonry {
+          column-count: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Masonry ilman JS:ää</h1>
+      <section class="masonry">
+        <article class="card">
+          <img src="https://picsum.photos/seed/a/600/400" />
+          <p>Kuva A</p>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/b/600/900" />
+          <p>Kuva B</p>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/c/600/500" />
+          <p>Kuva C</p>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/d/600/720" />
+          <p>Kuva D</p>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/e/600/360" />
+          <p>Kuva E</p>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>
