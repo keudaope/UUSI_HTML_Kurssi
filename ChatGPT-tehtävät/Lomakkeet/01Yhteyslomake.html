@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Yhteydenotto</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #f5f7fa;
+        margin: 0;
+        padding: 2rem;
+      }
+      form {
+        max-width: 400px;
+        margin: auto;
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        display: block;
+        margin-top: 1rem;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 0.5rem;
+        margin-top: 0.3rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        margin-top: 1rem;
+        padding: 0.6rem 1.2rem;
+        background: #4a90e2;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #357ab8;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h2>Ota yhteyttä</h2>
+      <label>Nimi</label>
+      <input type="text" required />
+      <label>Sähköposti</label>
+      <input type="email" required />
+      <label>Viesti</label>
+      <textarea rows="4"></textarea>
+      <button>Lähetä</button>
+    </form>
+  </body>
+</html>

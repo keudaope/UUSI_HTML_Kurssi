@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sign Up</title>
+    <style>
+      :root {
+        --ink: #e3ea65; /* limenvihreä teksti */
+        --bg: #1f2331; /* tummansininen tausta */
+        --bar: #d28208; /* oranssi palkki */
+        --field-bg: #ffffff; /* kenttien tausta */
+        --field-bd: #c9c9c9; /* kenttien reuna */
+        --submit: #53a44e; /* vihreä */
+        --cancel: #d65752; /* punainen */
+      }
+
+      body {
+        margin: 0;
+        font: 16px/1.4 "Segoe UI", system-ui, -apple-system, Arial;
+        background: #111722;
+        color: #eee;
+      }
+
+      .card {
+        max-width: 860px;
+        margin: 0 auto;
+        background: var(--bg);
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+      }
+
+      /* ylä- ja alapalkit */
+      .bar {
+        background: var(--bar);
+        padding: 16px 24px;
+      }
+      .bar h1 {
+        margin: 0;
+        font-weight: 600;
+        color: #ffefc8;
+        letter-spacing: 0.3px;
+      }
+
+      /* lomake-layout */
+      form {
+        padding: 28px 36px 16px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 240px 1fr;
+        gap: 18px 22px;
+        align-items: center;
+        max-width: 720px;
+        margin: 0 auto;
+      }
+
+      label {
+        color: var(--ink);
+        font-size: 1.15rem;
+        justify-self: end;
+        text-align: right;
+        white-space: nowrap;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="password"],
+      select,
+      textarea {
+        width: 100%;
+        background: var(--field-bg);
+        border: 1px solid var(--field-bd);
+        border-radius: 6px;
+        padding: 0.55rem 0.7rem;
+        color: #222;
+        box-sizing: border-box;
+      }
+
+      /* syntymäaika rivinä: kolme selectiä peräkkäin */
+      .dob {
+        display: flex;
+        gap: 0.6rem;
+      }
+      .dob select {
+        flex: 1;
+      }
+
+      /* sukupuoli rivinä */
+      .gender {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+        color: #eee;
+      }
+
+      /* checkbox teksti */
+      .terms {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        color: var(--ink);
+        font-size: 1.05rem;
+      }
+
+      /* napit */
+      .actions {
+        display: flex;
+        gap: 18px;
+        justify-content: center;
+        padding: 22px 0 34px;
+      }
+      .btn {
+        min-width: 160px;
+        border: none;
+        border-radius: 8px;
+        padding: 0.85rem 1.4rem;
+        font-size: 1.05rem;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+      }
+      .btn-submit {
+        background: var(--submit);
+      }
+      .btn-cancel {
+        background: var(--cancel);
+      }
+
+      /* responsiivisuus */
+      @media (max-width: 720px) {
+        .grid {
+          grid-template-columns: 1fr;
+          gap: 10px 12px;
+        }
+        label {
+          justify-self: start;
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="bar"><h1>Sign Up</h1></div>
+
+      <form aria-labelledby="signup-title">
+        <div class="grid">
+          <label for="first">First Name</label>
+          <input
+            id="first"
+            type="text"
+            placeholder="Enter First Name"
+            required
+          />
+
+          <label for="last">Last Name</label>
+          <input id="last" type="text" placeholder="Enter Last Name" required />
+
+          <label>Date of Birth</label>
+          <div class="dob">
+            <select aria-label="Day">
+              <option>Date</option>
+              <!-- 1–31 -->
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
+              <option>13</option>
+              <option>14</option>
+              <option>15</option>
+              <option>16</option>
+              <option>17</option>
+              <option>18</option>
+              <option>19</option>
+              <option>20</option>
+              <option>21</option>
+              <option>22</option>
+              <option>23</option>
+              <option>24</option>
+              <option>25</option>
+              <option>26</option>
+              <option>27</option>
+              <option>28</option>
+              <option>29</option>
+              <option>30</option>
+              <option>31</option>
+            </select>
+            <select aria-label="Month">
+              <option>Month</option>
+              <option>Jan</option>
+              <option>Feb</option>
+              <option>Mar</option>
+              <option>Apr</option>
+              <option>May</option>
+              <option>Jun</option>
+              <option>Jul</option>
+              <option>Aug</option>
+              <option>Sep</option>
+              <option>Oct</option>
+              <option>Nov</option>
+              <option>Dec</option>
+            </select>
+            <select aria-label="Year">
+              <option>Year</option>
+              <!-- esimerkkivuosia -->
+              <option>2008</option>
+              <option>2007</option>
+              <option>2006</option>
+              <option>2005</option>
+              <option>2004</option>
+              <option>2003</option>
+              <option>2002</option>
+              <option>2001</option>
+              <option>2000</option>
+              <option>1999</option>
+              <option>1998</option>
+              <option>1997</option>
+            </select>
+          </div>
+
+          <span aria-hidden="true" style="height: 0"></span>
+          <div class="gender" role="group" aria-label="Gender">
+            <label style="color: #eee; text-align: left; justify-self: start">
+              <input type="radio" name="gender" value="male" /> Male
+            </label>
+            <label style="color: #eee; text-align: left; justify-self: start">
+              <input type="radio" name="gender" value="female" /> Female
+            </label>
+          </div>
+
+          <label for="country">Country</label>
+          <select id="country">
+            <option>Country</option>
+            <option>Finland</option>
+            <option>Sweden</option>
+            <option>Estonia</option>
+            <option>Norway</option>
+            <option>Denmark</option>
+          </select>
+
+          <label for="email">E-mail</label>
+          <input id="email" type="email" placeholder="Enter E-mail" required />
+
+          <label for="phone">Phone</label>
+          <input id="phone" type="tel" placeholder="Enter Phone" />
+
+          <label for="pw">Password</label>
+          <input id="pw" type="password" placeholder="" />
+
+          <label for="pw2">Confirm Password</label>
+          <input id="pw2" type="password" placeholder="" />
+
+          <span></span>
+          <label class="terms" for="terms" style="justify-self: start">
+            <input id="terms" type="checkbox" />
+            I Agree to the Terms of use
+          </label>
+        </div>
+      </form>
+
+      <div class="bar" style="display: flex; justify-content: center">
+        <div class="actions">
+          <button class="btn btn-submit" type="submit" formnovalidate>
+            Submit
+          </button>
+          <button class="btn btn-cancel" type="reset">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

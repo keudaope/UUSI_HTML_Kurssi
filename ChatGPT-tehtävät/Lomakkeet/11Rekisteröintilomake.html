@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    th {
+      background-color: #feffaa;
+      color: red;
+    }
+    td {
+      background-color: #04ccff;
+    }
+    button {
+      width: 33%;
+    }
+  </style>
+  <body>
+    <table border="1">
+      <form action="">
+        <tr>
+          <th colspan="2">Rekisteröintilomake</th>
+        </tr>
+        <tr>
+          <td>Anna nimi:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Anna salasana:</td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td>Anna osoite:</td>
+          <td><textarea name="osoite" id="osoite"></textarea></td>
+        </tr>
+        <tr>
+          <td>Valitse peli:</td>
+          <td>
+            <input type="checkbox" /> Jääkiekko<br />
+            <input type="checkbox" /> Jalkapallo<br />
+            <input type="checkbox" /> Sulkapallo<br />
+            <input type="checkbox" /> Squash<br />
+            <input type="checkbox" /> Lentopallo
+          </td>
+        </tr>
+        <tr>
+          <td>Sukupuoli:</td>
+          <td><input type="radio" /> Mies <input type="radio" /> Nainen</td>
+        </tr>
+        <tr>
+          <td>Ikä:</td>
+          <td>
+            <select name="ika" id="ika">
+              <option value="">-- Valitse ikäsi --</option>
+              <option value="alle18">7-17 vuotias</option>
+              <option value="alle30">18-29 vuotias</option>
+              <option value="alle65">30-64 vuotias</option>
+              <option value="yli65">65 - vuotias</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Valitse kuva:</td>
+          <td>
+            <input type="file" id="myFile" name="filename" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <button>Napauta minua</button><button>Resetoi</button
+            ><button>lähetä</button>
+          </td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>

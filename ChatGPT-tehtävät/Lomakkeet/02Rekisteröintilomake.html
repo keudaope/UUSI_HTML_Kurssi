@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rekisteröinti</title>
+    <style>
+      body {
+        font-family: Arial;
+        background: #eef2f7;
+        padding: 2rem;
+      }
+      form {
+        max-width: 400px;
+        margin: auto;
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      }
+      label {
+        display: block;
+        margin-top: 1rem;
+      }
+      input[type="text"],
+      input[type="password"],
+      input[type="email"] {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .gender {
+        margin-top: 0.5rem;
+      }
+      button {
+        margin-top: 1.5rem;
+        width: 100%;
+        padding: 0.7rem;
+        border: none;
+        background: #1e90ff;
+        color: white;
+        border-radius: 5px;
+      }
+      button:hover {
+        background: #005fbb;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h2>Luo tili</h2>
+      <label>Nimi</label>
+      <input type="text" required />
+      <label>Sähköposti</label>
+      <input type="email" required />
+      <label>Salasana</label>
+      <input type="password" required />
+      <label>Sukupuoli</label>
+      <div class="gender">
+        <input type="radio" name="gender" /> Mies
+        <input type="radio" name="gender" /> Nainen
+      </div>
+      <button>Rekisteröidy</button>
+    </form>
+  </body>
+</html>
