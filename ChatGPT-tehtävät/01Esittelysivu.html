@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Esittely</title>
+    <style>
+      :root {
+        --bg: #f6f7fb;
+        --text: #222;
+        --accent: #4a90e2;
+      }
+      body {
+        margin: 0;
+        font: 16px/1.6 system-ui;
+        background: var(--bg);
+        color: var(--text);
+      }
+      header,
+      main,
+      footer {
+        max-width: 800px;
+        margin: auto;
+        padding: 1.5rem;
+      }
+      header {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+      }
+      img {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid var(--accent);
+      }
+      h1 {
+        margin: 0.2rem 0;
+      }
+      .badges span {
+        display: inline-block;
+        background: #eaf3ff;
+        color: #0b3d88;
+        padding: 0.25rem 0.5rem;
+        border-radius: 999px;
+        margin-right: 0.5rem;
+      }
+      footer {
+        text-align: center;
+        color: #666;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+        border-bottom: 1px dashed;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="https://picsum.photos/200" alt="Profiilikuva" />
+      <div>
+        <h1>Olen Alex</h1>
+        <p>
+          Aloitteleva web-kehittäjä, jota kiinnostaa saavutettava ja selkeä
+          käyttöliittymäsuunnittelu.
+        </p>
+        <p class="badges"><span>HTML</span><span>CSS</span><span>Git</span></p>
+      </div>
+    </header>
+    <main>
+      <h2>Minusta</h2>
+      <p>
+        Pidän oppimisesta ja dokumentoin tekemiseni blogiin. Tavoite:
+        ensimmäinen portfolio kuukaudessa.
+      </p>
+      <h2>Yhteystiedot</h2>
+      <p>Sähköposti: <a href="mailto:alex@example.com">alex@example.com</a></p>
+    </main>
+    <footer>© 2025 Alex</footer>
+  </body>
+</html>

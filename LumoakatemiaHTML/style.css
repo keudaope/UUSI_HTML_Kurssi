@@ -1,0 +1,64 @@
+body {
+  color: green;
+  font-family: Verdana, Arial, Geneva, Helvetica;
+  background-color: burlywood;
+  font-size: 12px;
+  margin: 0px;
+}
+h1,
+h2 {
+  text-decoration: underline;
+  font-size: 150%;
+  text-align: center;
+}
+h1 {
+  color: pink;
+}
+/* .para1 {
+  color: blue;
+  font-size: 0.8em;
+}
+.para2 {
+  color: red;
+  font-size: xx-small;
+} */
+.paragraph {
+  color: red;
+  font-size: 10px;
+  line-height: 1.5em;
+  background-color: #e5e4d7;
+  padding: 10px;
+  border-width: 10px 5px;
+  border-style: solid;
+  border-color: black;
+  margin: 0px 20px;
+  margin-bottom: 15px;
+  background-image: url(pilvi.png);
+}
+#kappale4 {
+  color: black;
+  padding: 10px;
+  margin: 10px;
+  background-color: beige;
+}
+
+/* .para4 {
+  color: black;
+  font-size: 10px;
+  line-height: 1.5em;
+  background-color: #e5e4d7;
+  padding: 10px;
+  border-style: dashed;
+  border-color: blue;
+  border-width: 3px;
+  margin: 0px 10px;
+  margin-left: 200px;
+} */
+.mainimg {
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  background-color: silver;
+  padding: 3px;
+  border: 2px solid black;
+}

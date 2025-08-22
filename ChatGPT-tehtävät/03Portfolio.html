@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui;
+        background: #0f172a;
+        color: #e2e8f0;
+      }
+      header {
+        padding: 2rem;
+        text-align: center;
+      }
+      .grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        max-width: 1000px;
+        margin: 0 auto 2rem;
+        padding: 0 1rem;
+      }
+      .card {
+        flex: 1 1 280px;
+        background: #111827;
+        border: 1px solid #1f2937;
+        border-radius: 14px;
+        padding: 1rem;
+      }
+      .card h3 {
+        margin: 0.2rem 0;
+      }
+      small {
+        color: #94a3b8;
+      }
+      a {
+        color: #93c5fd;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Alex – projektit</h1>
+      <p>Pieni kokoelma harjoituksia.</p>
+    </header>
+    <section class="grid">
+      <article class="card">
+        <h3>Esittelysivu</h3>
+        <p>Perusrakenne ja typografia.</p>
+        <small>HTML, CSS</small>
+      </article>
+      <article class="card">
+        <h3>CV</h3>
+        <p>Taulukot ja listat.</p>
+        <small>HTML, CSS</small>
+      </article>
+      <article class="card">
+        <h3>Laskeutumissivu</h3>
+        <p>Hero ja kortit.</p>
+        <small>Flexbox</small>
+      </article>
+      <article class="card">
+        <h3>Kuvagalleria</h3>
+        <p>Ruudukko.</p>
+        <small>CSS Grid</small>
+      </article>
+    </section>
+    <footer style="text-align: center; color: #94a3b8; padding: 1rem">
+      © 2025
+    </footer>
+  </body>
+</html>

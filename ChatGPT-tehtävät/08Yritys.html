@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Acme Oy</title>
+    <style>
+      :root {
+        --brand: #0ea5e9;
+      }
+      body {
+        margin: 0;
+        font-family: system-ui;
+      }
+      .hero {
+        color: #fff;
+        background: linear-gradient(120deg, #0ea5e9, #2563eb);
+        padding: 4rem 1rem;
+        text-align: center;
+      }
+      .hero h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+      .hero p {
+        opacity: 0.95;
+      }
+      .wrap {
+        max-width: 1100px;
+        margin: auto;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1rem;
+        padding: 2rem 1rem;
+      }
+      .card {
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        padding: 1.2rem;
+      }
+      .cta {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.7rem 1rem;
+        background: #fff;
+        color: #0f172a;
+        border-radius: 999px;
+        text-decoration: none;
+      }
+      footer {
+        padding: 1rem;
+        text-align: center;
+        color: #6b7280;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="wrap">
+        <h1>Rakennamme selkeitä verkkosivuja</h1>
+        <p>Pienyrityksille ja järjestöille – nopeasti ja edullisesti.</p>
+        <a class="cta" href="#">Pyydä tarjous</a>
+      </div>
+    </header>
+    <main class="wrap">
+      <section class="cards">
+        <article class="card">
+          <h3>Suunnittelu</h3>
+          <p>Värit, typografia ja rakenne.</p>
+        </article>
+        <article class="card">
+          <h3>Toteutus</h3>
+          <p>Responsiiviset sivut ilman ylimääräistä.</p>
+        </article>
+        <article class="card">
+          <h3>Tuki</h3>
+          <p>Julkaisun jälkeinen päivitysapu.</p>
+        </article>
+      </section>
+    </main>
+    <footer>© 2025 Acme Oy</footer>
+  </body>
+</html>

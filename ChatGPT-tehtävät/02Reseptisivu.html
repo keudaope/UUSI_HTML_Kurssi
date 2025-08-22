@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Pannukakku</title>
+    <style>
+      body {
+        font-family: Georgia, serif;
+        margin: 0;
+        background: #fff7f2;
+        color: #2b241f;
+      }
+      main {
+        max-width: 760px;
+        margin: auto;
+        padding: 2rem;
+      }
+      h1 {
+        margin-top: 0;
+      }
+      .recipe {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+      }
+      .recipe img {
+        width: 100%;
+        border-radius: 12px;
+      }
+      ul,
+      ol {
+        background: #fff;
+        border: 1px solid #eed8c9;
+        border-radius: 8px;
+        padding: 1rem 1.25rem;
+      }
+      .tag {
+        display: inline-block;
+        background: #ffeadb;
+        padding: 0.25rem 0.5rem;
+        border-radius: 6px;
+        margin-right: 0.5rem;
+      }
+      @media (max-width: 700px) {
+        .recipe {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>
+        Pannukakku <span class="tag">helppo</span
+        ><span class="tag">uunissa</span>
+      </h1>
+      <section class="recipe">
+        <img
+          src="https://picsum.photos/seed/pancake/800/500"
+          alt="Pannukakku"
+        />
+        <div>
+          <h2>Ainekset</h2>
+          <ul>
+            <li>6 dl maitoa</li>
+            <li>3 dl vehnäjauhoja</li>
+            <li>3 munaa</li>
+            <li>½ tl suolaa</li>
+            <li>2 rkl sokeria</li>
+          </ul>
+          <h2>Vaiheet</h2>
+          <ol>
+            <li>Sekoita ainekset tasaiseksi.</li>
+            <li>Kaada uunipellille, paista 225 °C ~25 min.</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

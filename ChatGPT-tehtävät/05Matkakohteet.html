@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Matkakohteet</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui;
+        background: #e6f2ff;
+      }
+      .wrapper {
+        max-width: 1100px;
+        margin: auto;
+        padding: 2rem;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1rem;
+      }
+      .card {
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid #dbeafe;
+      }
+      .card img {
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+      }
+      .card div {
+        padding: 1rem;
+      }
+      a {
+        color: #1d4ed8;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="wrapper">
+      <h1>Kolme kohdetta</h1>
+      <section class="cards">
+        <article class="card">
+          <img src="https://picsum.photos/seed/rome/600/400" alt="Rooma" />
+          <div>
+            <h3>Rooma</h3>
+            <p>Historiaa ja ruokaa.</p>
+            <p><a href="#">Virallinen sivu</a></p>
+          </div>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/tokyo/600/400" alt="Tokio" />
+          <div>
+            <h3>Tokio</h3>
+            <p>Hypermoderni ja perinteikäs.</p>
+            <p><a href="#">Matkailusivusto</a></p>
+          </div>
+        </article>
+        <article class="card">
+          <img
+            src="https://picsum.photos/seed/reykjavik/600/400"
+            alt="Reykjavík"
+          />
+          <div>
+            <h3>Reykjavík</h3>
+            <p>Luontoelämyksiä.</p>
+            <p><a href="#">Info</a></p>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
