@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lomake</title>
+    <style>
+        form{
+            width: 50%;
+            background-color: #FFFFE0;
+            padding: 20px;
+        }
+        h1{
+            text-align: center;
+        }
+        label{
+            display: inline-block;
+            width: 120px;
+        }
+        input{
+            border-radius: 15px;
+        }
+        textarea {
+            width: 150px;
+            height: 150px;
+        }
+
+    </style>
+</head>
+<body><form action="">
+<h1>Lomake</h1>
+<label for="enimi">Etunimi</label>
+<input type="text" id="enimi">
+<label for="snimi">Sukunimi</label>
+<input type="text" id="snimi">
+<label for="ktunnus">Käyttäjätunnus</label>
+<input type="text" id="ktunnus">
+<label for="ssana">Salasana</label>
+<input type="password" id="ssana">
+<label for="spuoli">Sukupuoli</label>
+<input type="radio" name="spuoli">Mies<br/>
+<input type="radio" name="spuoli" style="margin-left:128px">Nainen<br/>
+<label for="palaute">Palaute</label>
+<textarea name="palaute" id="palaute"></textarea>
+<label for="jtaso">Jäsenyystaso</label>
+<select name="jtaso" id="">
+    <option value="">Valitse yksi</option>
+    <option value="admin">Admin</option>
+    <option value="kayttaja">Käyttäjä</option>
+    <option value="testi">Testi</option>
+</select><br>
+<label for="oalueet">Osaamisalueet</label>
+<input type="checkbox">PHP <br>
+<input type="checkbox" style="margin-left:128px">HTML <br>
+<input type="checkbox" style="margin-left:128px">CSS <br>
+<button>Lähetä</button>
+<button>Tyhjennä</button>
+
+</form>
+</body>
+</html>
