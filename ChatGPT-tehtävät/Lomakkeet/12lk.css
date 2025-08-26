@@ -1,0 +1,132 @@
+:root {
+    --ink: #e3ea65; /* limenvihreä teksti */
+    --bg: #1f2331; /* tummansininen tausta */
+    --bar: #d28208; /* oranssi palkki */
+    --field-bg: #ffffff; /* kenttien tausta */
+    --field-bd: #c9c9c9; /* kenttien reuna */
+    --submit: #53a44e; /* vihreä */
+    --cancel: #d65752; /* punainen */
+  }
+
+  body {
+    margin: 0;
+    background-image: url(../kuva2.png);
+    color: #eee;
+  }
+
+  .card {
+    max-width: 860px;
+    margin: 0 auto;
+    background: var(--bg);
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+  }
+
+  /* ylä- ja alapalkit */
+  .bar {
+    background: var(--bar);
+    padding: 16px 24px;
+  }
+  .bar h1 {
+    margin: 0;
+    font-weight: 600;
+    color: #ffefc8;
+    letter-spacing: 0.3px;
+  }
+
+  /* lomake-layout */
+  form {
+    padding: 28px 36px 16px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: 18px 22px;
+    align-items: center;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  label {
+    color: var(--ink);
+    font-size: 1.15rem;
+    justify-self: end;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"],
+  select,
+  textarea {
+    width: 100%;
+    background: var(--field-bg);
+    border: 1px solid var(--field-bd);
+    border-radius: 6px;
+    padding: 0.55rem 0.7rem;
+    color: #222;
+    box-sizing: border-box;
+  }
+
+  /* syntymäaika rivinä: kolme selectiä peräkkäin */
+.dob input[type="date"]{
+  width: 100%;
+  font-size: 25px;
+}
+
+  /* sukupuoli rivinä */
+  .gender {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    color: #eee;
+  }
+
+  /* checkbox teksti */
+  .terms {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--ink);
+    font-size: 1.05rem;
+  }
+
+  /* napit */
+  .actions {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    padding: 22px 0 34px;
+  }
+  .btn {
+    min-width: 160px;
+    border: none;
+    border-radius: 8px;
+    padding: 0.85rem 1.4rem;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+  }
+  .btn-submit {
+    background: var(--submit);
+  }
+  .btn-cancel {
+    background: var(--cancel);
+  }
+
+  /* responsiivisuus */
+  @media (max-width: 720px) {
+    .grid {
+      grid-template-columns: 1fr;
+      gap: 10px 12px;
+    }
+    label {
+      justify-self: start;
+      text-align: left;
+    }
+  }

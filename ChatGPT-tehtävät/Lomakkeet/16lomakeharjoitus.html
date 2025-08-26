@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+        input[type="text"], input[type="number"], 
+        input[type="email"], input[type="tel"]{
+            width: 97%;
+        }
+        form {
+            background-color: lightgray;
+            width: 40%;
+            padding: 10px 20px;
+            margin: 0 auto;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <table>
+        <tr>
+            <td colspan="2"><h1>Ohjelmointikokemukset</h1></td>
+        </tr>
+        <tr>
+            <td><label for="nimi">Nimi:</label></td>
+            <td><input type="text" name="nimi" id="nimi"></td>
+        </tr>
+        <tr>            
+            <td><label for="ika">Ikä:</label></td>
+            <td><input type="number" name="ika" id="ika"></td>
+        </tr>
+        <tr>
+            <td><label for="osoite">Osoite:</label></td>
+            <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="email">Sähköpostiosoite: </label></td>
+            <td><input type="email" name="email" id="email"></td>
+        </tr>
+        <tr>
+            <td><label for="puh">Puhelinnumero:</label></td>
+            <td><input type="tel" name="puh" id="puh"></td>
+        </tr>
+        <tr>
+            <td><label for="spuoli">Sukupuoli:</label></td>
+            <td><input type="radio" id="mies">Mies<br/>
+                <input type="radio" id="nainen">Nainen</td>
+            </tr>
+            <tr>
+                <td><label for="koulutus">Koulutus (ilmoita myös<br/> valmistumisvuodet)</label></td>
+                <td><textarea name="" id="" cols="30" rows="10" placeholder="2024 IT-tukihenkilö, Keuda"></textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="kuullut">Olen kuullut <br/> seuraavista ohjelmointi-<br/>kielistä aikaisemmin:</label>
+                </td>
+            <td>
+                <input type="checkbox" name="Java" id="Java">Java / C# <br/>
+                <input type="checkbox" name="Python" id="Python">Python<br/>
+                <input type="checkbox" name="C" id="C">C / C++ <br/>
+                <input type="checkbox" name="Perl" id="Perl">Perl <br/>
+                <input type="checkbox" name="Pascal" id="Pascal">Pascal / Delphi <br/>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="kuullut">Mieluisin ohjelmointi-<br/>kielistä minulle on:</label>
+            </td>
+            <td>
+                <input type="radio"  name="kuullut" id="Java">Java / C# <br/>
+                <input type="radio"  name="kuullut" id="Python">Python<br/>
+                <input type="radio"  name="kuullut" id="C">C / C++ <br/>
+                <input type="radio"  name="kuullut" id="Perl">Perl <br/>
+                <input type="radio"  name="kuullut" id="Pascal">Pascal / Delphi <br/>          
+            </td>
+        </tr>
+        <tr>
+            <td><label for="kokemus">Ohjelmointikokemukseni<br/>seuraavilla kielillä
+                <br/>(asteikolla 1...5: <br/>1 – ei yhtään, <br/>3 – jonkin verran, <br/>5 – paljon):</label></td>
+                <td>
+                    <input type="range" min="1" max="5" list="values">Java / C# <br/>
+                    <input type="range" min="1" max="5" list="values">Python <br/>
+                    <input type="range" min="1" max="5" list="values">C / C++ <br/>
+                <input type="range" min="1" max="5" list="values">Perl<br/>
+                <input type="range" min="1" max="5" list="values">Pascal / Delphi <br/>
+                <datalist id="values">
+                    <option value="1" label="1"></option>
+                    <option value="2" label="2"></option>
+                    <option value="3" label="3"></option>
+                    <option value="4" label="4"></option>
+                    <option value="5" label="5"></option>
+                </datalist>
+            </td>    
+        </tr>
+        <tr>
+            <td><label for="muuta">Muuta kerrottavaa <br>aikaisemmasta ohjelmointi-<br/>kokemuksestani:</label></td>
+            <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+        </tr>
+    </table>
+    
+</form>
+</body>
+</html>
