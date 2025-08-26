@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="15kl.css">
+</head>
+<body>
+    <form action="">
+        <h1>Kirjautumislomake</h1>
+        <label for="nimi">Nimi:</label><br/>
+        <input type="text" name="nimi" id="nimi"><br/>
+        <label for="ssana">Salasana:</label><br/>
+        <input type="text" name="ssana" id="ssana"><br/>
+        <input type="hidden" value="tätä tietoa ei näytetä käyttäjälle"><br/>
+        <label for="kkayttaja">Millainen koneenkäyttäjä olet?</label><br/>
+        <input type="radio" name="kkayttaja" id="himo">Himopelaaja<br/>
+        <input type="radio" name="kkayttaja" id="opiskelija">Käytän opiskeluun<br/>
+        <input type="radio" name="kkayttaja" id="enkayta">En käytä konetta<br/>
+        <label for="sivuista">Mitä mieltä olet sivuistani tähän asti</label><br/>
+        <input type="checkbox" name="sivuista-1" id="hienot">Todella hienot<br/>
+        <input type="checkbox" name="sivuista-2" id="ammattimaiset">Ammattimaisesti tehty<br/>
+        <input type="checkbox" name="sivuista-1" id="ostan">Ostan sinulta!<br/>
+        <label for="lempiaine">Mikä on lempiaineesi Keudassa</label><br/>
+        <select name="lempiaine" id="lempiaine">
+            <option value="ammattiaineet">Ammattiaineet</option>
+            <option value="matemaattiset">Matemaattiset aineet</option>
+            <option value="kielet">Kieliaineet</option>
+            <option value="yhteiskunta">Yhteiskunnalliset aineet</option>
+        </select><br/>
+        <label for="kehitys">Kerro, miten kehittäisit sivujani</label><br/>
+        <textarea name="kehitys" id="kehitys"></textarea><br/>
+        <button>Paina minua</button><br/>
+        <button>Laheta</button>
+        
+    </form>
+</body>
+</html>

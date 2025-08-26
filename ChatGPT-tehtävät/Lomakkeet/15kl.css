@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
+form {
+    width: 350px;
+    background-color: antiquewhite;
+    padding: 10px 20px;
+}
+h1{
+  font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto;
+  color: red;
+}
+label{
+    font-weight: bolder;
+}
+#nimi{
+    background-color: yellow;
+}
+
+
