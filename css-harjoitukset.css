@@ -1,0 +1,66 @@
+body{
+    background-color: lightblue;
+    max-width: 800px;
+    margin: auto;
+}
+p{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h1{
+    font-size: 30px;
+     text-shadow: 2px 2px 5px gray;
+}
+@keyframes move {
+    0% { left: 0; }
+    100% { left: 100px; }
+}
+div{
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px gray;
+    padding: 20px;
+    margin: 30px;  
+        width: 300px;
+    margin: auto;
+    display: block;
+            position: relative;
+    animation: move 2s infinite alternate;
+    box-shadow: 5px 5px 10px red;
+}
+div:hover{
+    transform: rotate(45deg);
+}
+div img{
+    width:600px;
+}
+a {
+    color: green;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+    text-decoration: solid;
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 40%;
+    background-color: black;
+    color: white;
+}
+button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: red;
+}
+.element {
+    position: absolute;
+    z-index: 10;
+}
