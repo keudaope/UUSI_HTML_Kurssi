@@ -16,3 +16,7 @@
 #right {
   background-color: #ebece4;
 }
+/* dia 75 */
+h2+p {
+  color: red;
+}

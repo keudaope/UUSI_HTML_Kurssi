@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap');
 form {
     width: 350px;
@@ -5,11 +6,17 @@ form {
     padding: 10px 20px;
 }
 h1{
-  font-family: "Edu NSW ACT Cursive", cursive;
-  font-optical-sizing: auto;
-  color: red;
+    font-family: "Libertinus Keyboard", system-ui;
+    font-weight: 400;
+    font-style: normal; 
+    color: red;
+    font-size: 12px;
 }
 label{
+      font-family: "Edu NSW ACT Cursive", cursive;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
     font-weight: bolder;
 }
 #nimi{
