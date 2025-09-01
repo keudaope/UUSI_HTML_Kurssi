@@ -1,0 +1,18 @@
+.lomake {
+  color: white;
+  background-color: #2c8f77;
+  padding: 15px;
+  border: 2px solid black;
+  display: table;
+}
+.row {
+  display: table-row;
+}
+.row input,
+.row label {
+  display: table-cell;
+  padding: 2px;
+}
+.row label {
+  text-align: right;
+}

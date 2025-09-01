@@ -1,0 +1,25 @@
+body {
+  background-color: #9c9f84;
+  margin: 0px;
+}
+.main,
+.main2 {
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+}
+.main {
+  background-color: #e5e4d7;
+  cursor: help;
+}
+.main2 {
+  background-color: green;
+  color: yellow;
+  height: 120px;
+  overflow: hidden;
+}
+a:hover {
+  color: #000;
+  background-color: #dadada;
+  cursor: move;
+}

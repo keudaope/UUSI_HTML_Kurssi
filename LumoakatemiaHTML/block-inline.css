@@ -1,0 +1,11 @@
+div,
+img.special,
+span {
+  padding: 10px;
+  border: black 2px solid;
+  margin: 25px;
+  background-color: yellow;
+}
+img.special {
+  width: 150px;
+}

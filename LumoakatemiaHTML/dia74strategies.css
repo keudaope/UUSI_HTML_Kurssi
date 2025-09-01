@@ -1,0 +1,18 @@
+#left,
+#center,
+#right {
+  width: 300px;
+  float: left;
+  padding: 15px;
+  margin: 10px;
+  border: solid 2px black;
+}
+#left {
+  background-color: #fffffe;
+}
+#center {
+  background-color: #ecf1ef;
+}
+#right {
+  background-color: #ebece4;
+}

@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tekniikan maailma - tilaus</title>
+    <style>
+      label {
+        display: inline-block;
+        width: 150px;
+      }
+      input[type="radio"] {
+        width: 10px;
+      }
+      h3 {
+        display: inline-block;
+        width: 150px;
+      }
+    </style>
   </head>
   <body>
     <h1>Tekniikan maailman tilauslomake</h1>
@@ -22,12 +35,9 @@
       <label for="salasana">Salasana: </label>
       <input type="password" id="salasana" required /><br />
       <h3>Sukupuoli:</h3>
-      <label for="mies">Mies:</label>
-      <input type="radio" name="sukupuoli" id="mies" />
-      <label for="nainen">Nainen:</label>
-      <input type="radio" name="sukupuoli" id="nainen" />
-      <label for="muu">Muu:</label>
-      <input type="radio" name="sukupuoli" id="Muu" /><br />
+      <input type="radio" name="sukupuoli" id="mies" />Mies
+      <input type="radio" name="sukupuoli" id="nainen" />Nainen
+      <input type="radio" name="sukupuoli" id="Muu" />Muu<br />
       <label for="synttari">Syntymäpäivä: </label>
       <input type="date" id="synttari" />
       <input type="submit" />

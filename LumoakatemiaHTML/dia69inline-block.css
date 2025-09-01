@@ -1,0 +1,13 @@
+.inline,
+.inline-block,
+.block {
+  background-color: yellow;
+  height: 50px;
+  display: inline;
+}
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
