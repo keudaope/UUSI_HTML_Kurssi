@@ -1,0 +1,35 @@
+#left {
+  width: 300px;
+  float: left;
+  padding: 15px;
+  margin: 10px;
+  background-color: #fffffe;
+  border: solid 2px green;
+}
+
+#center {
+  width: 300px;
+  float: left;
+  padding: 15px;
+  margin: 10px;
+  background-color: #ecf1ef;
+  border: solid 2px green;
+}
+
+#right {
+  width: 300px;
+  float: left;
+  padding: 15px;
+  margin: 10px;
+  background-color: #ebece4;
+  border: solid 2px green;
+}
+
+p::first-letter {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+p:first-line {
+  color: red;
+}
