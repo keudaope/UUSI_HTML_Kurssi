@@ -20,3 +20,7 @@
 h2+p {
   color: red;
 }
+
+/* dia 76 */
+/* p[lang]{color: orange;} */
+p[lang="fr"]{color: blue}

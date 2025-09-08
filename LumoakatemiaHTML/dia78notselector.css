@@ -1,0 +1,21 @@
+#left, #center, #right {
+	width: 300px;
+	float: left;
+	padding: 15px;
+	margin: 10px;
+	background-color: #FFFFFE;
+	border: solid 2px green;
+}
+#center {
+	background-color: #ECF1EF;
+}
+#right {
+	background-color: #EBECE4;
+}
+p {
+color: red;
+} 
+:not(p) {
+color: darkgreen;
+} 
+

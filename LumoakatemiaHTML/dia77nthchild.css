@@ -1,0 +1,4 @@
+#right p:nth-child(odd)
+{
+    background-color: orange;
+}
